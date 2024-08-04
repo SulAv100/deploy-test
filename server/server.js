@@ -5,6 +5,7 @@ const connectDb = require("./utils/db");
 const express = require("express");
 const cookieParser = require("cookie-parser")
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 const authRoute = require("./router/auth-router")
@@ -30,6 +31,11 @@ app.use("/api/admin", adminRoute);
 app.use("/api/user", userRoute);
 
 
+
+app.get("/",(req,res)=>{
+  app.use(express.static(path.resolve(__dirname,"client","dist")));
+  res.sendFile(path.resolve(__dirname,"client","dist","index.html"));
+});
 
 
 connectDb().then(() => {
