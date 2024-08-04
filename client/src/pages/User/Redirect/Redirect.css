@@ -1,0 +1,149 @@
+.redirect-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.redirect-section h1 {
+  font-size: 40px;
+  font-family: 'Arial', sans-serif;
+  color: #d9ff51;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.redirect-section article {
+  font-size: 17px;
+  font-family: 'Arial', sans-serif;
+  color: #8393bf;
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.border-line {
+  border: 1px solid #222f42;
+  width: 100%;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.central-container {
+  border: 1px solid #222f42;
+  background-color: #1c273d;
+  padding: 30px;
+  border-radius: 20px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.internal-container {
+  display: flex;
+  gap: 100px;
+  padding: 20px;
+  background-color: #283a5b;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+.left-image figure {
+  height: 400px;
+  border-radius: 20px;
+  width: 550px;
+}
+
+.left-image figure img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.right-info {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #141c31;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.right-info h2 {
+  font-size: 20px;
+  color: #b6e2f3;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.ins {
+  background-color: #283a5b;
+  border-radius: 20px;
+  padding: 10px 40px;
+}
+
+.single-line i {
+  color: #0ccdd4;
+}
+
+.single-line {
+  font-family: 'Arial', sans-serif;
+  color: #8d9eba;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.right-info button {
+  padding: 15px 175px;
+  background-color: #0ccdd4;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.right-info button:hover {
+  background-color: #0aabb5;
+  transform: scale(1.05);
+}

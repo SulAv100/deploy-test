@@ -1,0 +1,86 @@
+.user-data-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: #1e1e2f; 
+  color: #ffffff; 
+}
+
+.user-data {
+  width: 90%;
+  font-size: 30px;
+  padding: 10px;
+  margin: 20px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 1000;
+}
+
+.single-user-data {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: #282c34; 
+}
+
+.single-user-data span {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1px 20px;
+  background-color: rgb(255, 110, 110);
+  color: #ffffff; 
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.delete-button:hover {
+  background-color: rgb(138, 68, 68);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline;
+}
+
+.pagination a {
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background-color: #3a3f4b;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
