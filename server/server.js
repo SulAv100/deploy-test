@@ -15,7 +15,7 @@ const userRoute = require("./router/user-router");
 ////middlewares
 app.use(
   cors({
-    origin: "https://deploy-client-8szo.vercel.app/",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
