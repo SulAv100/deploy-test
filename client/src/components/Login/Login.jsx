@@ -13,7 +13,7 @@ function Login() {
   const tryLogin = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch(`http://localhost:3000/api/auth/login"`, {
+      const response = await fetch("http://localhost:3000/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,6 +25,7 @@ function Login() {
       const data = await response.json();
 
       if (response.ok) {
+        console.log(data);
         navigate("/");
       } else {
         console.log(data);

@@ -22,7 +22,7 @@ function Navbar() {
 
   const userLogout = async () => {
     try {
-      const response = await fetch(`http://localhos:3000/api/auth/logout`, {
+      const response = await fetch(`http://localhost:3000/api/auth/logout`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
